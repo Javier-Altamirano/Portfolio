@@ -1,0 +1,209 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --ff-blue-dark: #00004d;
+    --ff-blue-light: #0000cc;
+    --ff-border: #ffffff;
+    --ff-text: #ffffff;
+    --ff-shadow: rgba(0, 0, 0, 0.7);
+    --ff-highlight: #ffcc00; 
+}
+/*----------------------- BODY  */
+body 
+{
+    font-family: 'VT323', monospace;
+    background-color: black;
+    color: var(--ff-text);
+    overflow-x: hidden;
+}
+/*----------------------- hs ps as  */
+h1, h2, h3, p, a, label, input, textarea, button 
+{
+    font-family: 'VT323', monospace;
+    letter-spacing: 1px;
+}
+
+h1 { font-size: 3rem; margin-bottom: 1rem; }
+h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #ffffcc; }
+p, li { font-size: 1.5rem; line-height: 1.4; }
+/*----------------------- scroll  */
+
+/*--------------------- SECCION         */
+section
+{
+    height: 100vh;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+/*----------------------- CAJA  */
+.caja
+{
+    background: linear-gradient(to bottom right, var(--ff-blue-light), var(--ff-blue-dark));
+    border: 4px solid var(--ff-border);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 
+        inset 0 0 10px rgba(0,0,0,0.5),
+        5px 5px 15px var(--ff-shadow);
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.caja::before {
+   content: '';
+    position: absolute;
+    top: 2px; left: 2px; right: 2px; bottom: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    pointer-events: none;
+}
+/*--------------------- SUBCAJA    */
+.subcaja
+{
+    background: linear-gradient(to bottom right, #000088, #000022);
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+/*--------------------- MENU    */
+#menu
+{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 160px;
+
+    z-index: 500;
+
+    padding: 1rem;
+}
+#menu ul
+{
+    list-style: none;
+    padding-left: 5px;
+}
+#menu li
+{
+    margin-bottom: 0.5rem;
+}
+.nav-link
+{
+    color: var(--ff-text);
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    transition: color 0.2s;
+}
+
+/*--------------------- Elementos    */
+.texto-centro
+{
+    text-align: center;
+}
+.blink
+{
+    animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker { 50% { opacity: 0; } }
+/*--------------------- BOTONES     */
+.btn
+{
+    display: inline-block;
+    background: transparent;
+    color: var(--ff-text);
+    text-decoration: none;
+    border: 2px solid var(--ff-border);
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: linear-gradient(to bottom right, #000088, #000022);
+    margin-top: 1rem;
+}
+.btn:hover {
+    color: var(--ff-highlight);
+    border-color: var(--ff-highlight);
+    transform: scale(1.05);
+}
+.redes-btn {
+    margin: 10px;
+}
+/*--------------------- Habilidades     */
+.conocimientos {
+    list-style: none;
+    columns: 2;
+}
+.conocimientos li {
+    margin-bottom: 10px;
+}
+/*--------------------- PROYECTOS     */
+.contenedor
+{
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-pro
+{
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.carta
+{
+    text-align: left;
+}
+
+.imagen
+{
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+    display: block;
+}
+ /*--------------- FORM */
+ .form-contacto
+ {
+    display: flex;
+    flex-direction: column;
+ }
+.grup-form
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.grup-form label
+{
+    margin-bottom: 5px;
+}
+
+#Mensaje
+{
+    height: 100px;
+    resize: vertical;
+}
+
+.enviar
+{
+    width: 100%;
+}

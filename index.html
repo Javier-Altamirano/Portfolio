@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Altamiranos - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="codigo.js"></script>
+</head>
+<!--Menú.-->
+<!--Presentación inicial con foto.-->
+<!--Información general.-->
+<!--Conocimientos.-->
+<!--Proyectos.-->
+<!--Redes.-->
+<!--Formulario de contacto.-->
+
+<body>
+    <!-- Menu-->
+    <nav id="menu" class = "caja">
+        <ul>
+            <li>
+                <a href="#titulo" class="nav-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#informacion" class="nav-link">Info</a>
+            </li>
+            <li>
+                <a href="#conocimientos" class="nav-link">Skills</a>
+            </li>
+            <li>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+            </li>
+            <li>
+                <a href="#Redes" class="nav-link">Redes</a>
+            </li>
+            <li>
+                <a href="#Contacto" class="nav-link">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Presentación inicial.-->
+   <section id="titulo" class="seccion">
+        <div class="texto-centro caja">
+            <h1 class ="blink">> Bienvenido a mi Portfolio</h1>
+            <h2>Javier Francisco Altamirano</h2>
+            <div>
+                <img width="200px" src="https://lh3.googleusercontent.com/a/ACg8ocItsGqiQaPorNU5hhVtr6-40RpDVbrc0P6XNGDwxHawxrPUNOM=s288-c-no" alt="Foto de perfil">
+            </div>
+            <p>
+                Programador en formación...
+            </p>
+            <a href="#informacion" class="btn">Iniciar partida</a>
+        </div>
+   </section>
+
+   <!-- Información general.-->
+    <section id="informacion" class="seccion">
+        <div class="caja">
+            <h2>[ Info General ]</h2>
+            <p>
+                Estudiante de la Tecnicatura Universitaria en Programación
+                en la Universidad Tecnológica Nacional (UTN) - General Pacheco.
+                <br><br>
+                Actualmente cursando el segundo año de la carrera,
+                desarrollando proyectos académicos y personales enfocados
+                en programación orientada a objetos, bases de datos
+                y desarrollo de aplicaciones.
+            </p>
+        </div>
+    </section>
+
+    <!-- Conocimientos.-->    
+    <section id="conocimientos" class="seccion">
+        <div class="caja">
+            <h2>[ Conocimientos ]</h2>
+            <ul class ="conocimientos">
+                <li>C++</li>
+                <li>C# / WinForms</li>
+                <li>Programación Orientada a Objetos</li>
+                <li>SQL Server</li>
+                <li>SFML</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Proyectos.-->
+    <section id="proyectos">
+        <div class ="caja contenedor">
+            <h2>[ Proyectos ]</h2>
+            <div class="scroll-pro">
+                <!-- P1-->
+                <div class="subcaja carta">
+                    <h3>App de comercio</h3>     
+                    Proyecto desarrollado en C++.
+                    Aplicación de consola que permite gestionar artículos,
+                    simular compras mediante un carrito y visualizar
+                    estadísticas de ventas y recaudación.
+                    <br>
+                    <img class="imagen" width="400px" height="250px" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778182080/Captura_de_pantalla_2026-05-07_162558_l0jgc9.png" alt="Programa de consola">
+                    <br>
+                </div>
+                <!-- P2-->
+                <div class="subcaja carta">
+                    <h3>The last gardians</h3> 
+                    RPG por turnos desarrollado en C++ utilizando SFML.
+                    El proyecto incluye combate por turnos, sistema de enemigos,
+                    interfaz gráfica y lógica de juego orientada a objetos.
+                    <br>
+                    <img class="imagen" width="400px" height="250px" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778181703/Captura_de_pantalla_2025-12-15_164933_konwr1.png" alt="Captura de pantalla del juego The last gardians">
+                    <br>
+                </div>
+                <!-- P3-->
+                <div class="subcaja carta">
+                    <h3>App de gestion de articulos</h3>
+                    Aplicación de escritorio desarrollada en C# y WinForms y 
+                    conectada a SQL Server.
+                    Permite administrar artículos, imágenes, categorías y marcas,
+                    incluyendo funciones de alta, modificación y visualización.
+                    <br>
+                    <img class="imagen" width="400px" height="250px" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778181718/Captura_de_pantalla_2026-05-07_161552_fhr9qb.png" alt="Programa de WinForms">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redes.-->
+    <section id="Redes" class="seccion">
+        <div class="texto-centro caja">
+            <h2>[ Redes ]</h2>
+            <a href="https://www.linkedin.com/in/javier-altamirano-100b7332b/?skipRedirect=true" target="_blank" class="btn redes-btn">[LinkedIn]</a> <br>
+            <a href="https://github.com/Javier-Altamirano" target="_blank" class="btn redes-btn">[GitHub]</a> <br>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto.-->
+    <section id="Contacto" class="seccion">
+        <div class="caja">
+            <h2>[ Enviar Mensaje ]</h2>
+            <form id="contacto-form" action="#" class="form-contacto">
+                <div class="grup-form">
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" id="Nombre" name="Nombre"> 
+                </div>
+                <br>
+                <div class="grup-form">
+                    <label for="Apellido">Apellido:</label>
+                    <input type="text" id="Apellido" name="Apellido">
+                </div>
+                <br>
+                <div class="grup-form">
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" name="Email"> 
+                </div>
+                <br>
+                <div class="grup-form">
+                    <label for="Mensaje">Mensaje:</label>
+                    <input type="text" id="Mensaje" name="Mensaje"> 
+                </div>
+                <br>
+            </form>
+            <div class="texto-centro">
+                <button onclick="enviar()" type="submit" class="btn enviar">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <header>
+
+    </header>
+</body>
+</html>
