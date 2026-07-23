@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="estilos.css">
-    <script src="codigo.js"></script>
 </head>
 <!--Menú.-->
 <!--Presentación inicial con foto.-->
@@ -51,12 +50,12 @@
             <h1 class ="blink">> Bienvenido a mi Portfolio</h1>
             <h2>Javier Francisco Altamirano</h2>
             <div>
-                <img width="200px" src="https://lh3.googleusercontent.com/a/ACg8ocItsGqiQaPorNU5hhVtr6-40RpDVbrc0P6XNGDwxHawxrPUNOM=s288-c-no" alt="Foto de perfil">
+                <img class="foto-perfil" src="https://lh3.googleusercontent.com/a/ACg8ocItsGqiQaPorNU5hhVtr6-40RpDVbrc0P6XNGDwxHawxrPUNOM=s288-c-no" alt="Foto de perfil">
             </div>
             <p>
                 Programador en formación...
             </p>
-            <a href="#informacion" class="btn">Iniciar partida</a>
+            <a href="#informacion" class="btn">⚔ Iniciar partida</a>
         </div>
    </section>
 
@@ -67,12 +66,16 @@
             <p>
                 Estudiante de la Tecnicatura Universitaria en Programación
                 en la Universidad Tecnológica Nacional (UTN) - General Pacheco.
-                <br><br>
+        
                 Actualmente cursando el segundo año de la carrera,
                 desarrollando proyectos académicos y personales enfocados
                 en programación orientada a objetos, bases de datos
                 y desarrollo de aplicaciones.
             </p>
+        </div>
+        <div class="navegacion">
+            <a href="#titulo" class="btn">← Retroceder</a>
+            <a href="#conocimientos" class="btn">Atacar →</a>
         </div>
     </section>
 
@@ -88,6 +91,10 @@
                 <li>SFML</li>
             </ul>
         </div>
+        <div class="navegacion">
+            <a href="#informacion" class="btn">← Retroceder</a>
+            <a href="#proyectos" class="btn">Atacar →</a>
+        </div>
     </section>
 
     <!-- Proyectos.-->
@@ -97,36 +104,81 @@
             <div class="scroll-pro">
                 <!-- P1-->
                 <div class="subcaja carta">
-                    <h3>App de comercio</h3>     
-                    Proyecto desarrollado en C++.
-                    Aplicación de consola que permite gestionar artículos,
-                    simular compras mediante un carrito y visualizar
-                    estadísticas de ventas y recaudación.
-                    <br>
-                    <img class="imagen" width="400px" height="250px" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778182080/Captura_de_pantalla_2026-05-07_162558_l0jgc9.png" alt="Programa de consola">
-                    <br>
+
+                    <h3>🌐 Web App de gestión de Restobar</h3>
+
+                    <p class="tecnologias">
+                        C# • ASP.NET Web Forms • Bootstrap 5 • SQL Server
+                    </p>
+
+                    <p>
+                        Aplicación web desarrollada con C#, ASP.NET Web Forms,
+                        Bootstrap 5 y SQL Server. Permite administrar mesas,
+                        pedidos, clientes, empleados y facturación.
+                    </p>
+
+                    <img class="imagen" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1784784891/Captura_de_pantalla_2026-07-23_023427_dk75g4.png" alt="Programa de WebForms">
+
                 </div>
                 <!-- P2-->
-                <div class="subcaja carta">
-                    <h3>The last gardians</h3> 
-                    RPG por turnos desarrollado en C++ utilizando SFML.
-                    El proyecto incluye combate por turnos, sistema de enemigos,
-                    interfaz gráfica y lógica de juego orientada a objetos.
-                    <br>
-                    <img class="imagen" width="400px" height="250px" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778181703/Captura_de_pantalla_2025-12-15_164933_konwr1.png" alt="Captura de pantalla del juego The last gardians">
-                    <br>
+                 <div class="subcaja carta">
+
+                    <h3>🎮 The Last Guardians</h3>
+
+                    <p class="tecnologias">
+                        C++ • SFML
+                    </p>
+
+                    <p>
+                        RPG por turnos desarrollado en C++ y SFML.
+                        Incluye sistema de combate, enemigos, interfaz gráfica
+                        y programación orientada a objetos.
+                    </p>
+
+                    <img class="imagen" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778181703/Captura_de_pantalla_2025-12-15_164933_konwr1.png" alt="Captura de pantalla del juego The last gardians">
+
                 </div>
                 <!-- P3-->
-                <div class="subcaja carta">
-                    <h3>App de gestion de articulos</h3>
-                    Aplicación de escritorio desarrollada en C# y WinForms y 
-                    conectada a SQL Server.
-                    Permite administrar artículos, imágenes, categorías y marcas,
-                    incluyendo funciones de alta, modificación y visualización.
-                    <br>
-                    <img class="imagen" width="400px" height="250px" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778181718/Captura_de_pantalla_2026-05-07_161552_fhr9qb.png" alt="Programa de WinForms">
+                 <div class="subcaja carta">
+
+                    <h3>🖥 App de gestión de artículos</h3>
+
+                    <p class="tecnologias">
+                        C# • WinForms • SQL Server
+                    </p>
+
+                    <p>
+                        Aplicación de escritorio desarrollada en C# WinForms
+                        con SQL Server para administrar artículos,
+                        categorías, marcas e imágenes.
+                    </p>
+
+                    <img class="imagen" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778181718/Captura_de_pantalla_2026-05-07_161552_fhr9qb.png" alt="Programa de WinForms">
+
                 </div>
+                <!-- P4-->
+                 <div class="subcaja carta">
+
+                    <h3>💻 App de comercio</h3>
+
+                    <p class="tecnologias">
+                        C++ • SFML
+                    </p>
+
+                    <p>
+                        Aplicación de consola en C++ para gestionar artículos,
+                        simular compras mediante un carrito y generar
+                        estadísticas de ventas.
+                    </p>
+
+                    <img class="imagen" src="https://res.cloudinary.com/dilvulcnw/image/upload/v1778182080/Captura_de_pantalla_2026-05-07_162558_l0jgc9.png" alt="Programa de consola">
+                </div>
+                
             </div>
+        </div>
+        <div class="navegacion">
+            <a href="#conocimientos" class="btn">← Retroceder</a>
+            <a href="#Redes" class="btn">Atacar →</a>
         </div>
     </section>
 
@@ -134,8 +186,12 @@
     <section id="Redes" class="seccion">
         <div class="texto-centro caja">
             <h2>[ Redes ]</h2>
-            <a href="https://www.linkedin.com/in/javier-altamirano-100b7332b/?skipRedirect=true" target="_blank" class="btn redes-btn">[LinkedIn]</a> <br>
-            <a href="https://github.com/Javier-Altamirano" target="_blank" class="btn redes-btn">[GitHub]</a> <br>
+            <a href="https://www.linkedin.com/in/javier-altamirano-100b7332b/?skipRedirect=true" target="_blank" class="btn redes-btn">[LinkedIn]</a>
+            <a href="https://github.com/Javier-Altamirano" target="_blank" class="btn redes-btn">[GitHub]</a> 
+        </div>
+        <div class="navegacion">
+            <a href="#proyectos" class="btn">← Retroceder</a>
+            <a href="#Contacto" class="btn">Atacar →</a>
         </div>
     </section>
 
@@ -143,36 +199,38 @@
     <section id="Contacto" class="seccion">
         <div class="caja">
             <h2>[ Enviar Mensaje ]</h2>
-            <form id="contacto-form" action="#" class="form-contacto">
+            <form id="contacto-form" action="https://formsubmit.co/javi.alt87@gmail.com" method="POST"  class="form-contacto">
                 <div class="grup-form">
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" id="Nombre" name="Nombre"> 
+                    <label for="Name">Nombre:</label>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Name" class="textM"> 
                 </div>
-                <br>
+
                 <div class="grup-form">
-                    <label for="Apellido">Apellido:</label>
-                    <input type="text" id="Apellido" name="Apellido">
+                    <label for="Last Name">Apellido:</label>
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Last Name" class="textM">
                 </div>
-                <br>
+
                 <div class="grup-form">
                     <label for="Email">Email:</label>
-                    <input type="email" id="Email" name="Email"> 
+                    <input type="email" id="Email" name="Email" placeholder="Email" class="textM"> 
                 </div>
-                <br>
+
                 <div class="grup-form">
-                    <label for="Mensaje">Mensaje:</label>
-                    <input type="text" id="Mensaje" name="Mensaje"> 
+                    <label for="Message">Mensaje:</label>
+                    <textarea id="Message" name="Message" placeholder="Message" cols="30" rows="5" class="textM"></textarea>
                 </div>
-                <br>
+
+                <div class="texto-centro">
+                    <button onclick="enviar()" type="submit" class="btn enviar">Enviar</button>
+                    <input type="submit" name="Enviar" id="" class="btn enviar">
+                </div>
             </form>
-            <div class="texto-centro">
-                <button onclick="enviar()" type="submit" class="btn enviar">Enviar</button>
-            </div>
         </div>
     </section>
 
     <header>
 
     </header>
+    <script src="codigo.js"></script>
 </body>
 </html>
