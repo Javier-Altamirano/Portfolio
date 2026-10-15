@@ -199,14 +199,19 @@
     <section id="Contacto" class="seccion">
         <div class="caja">
             <h2>[ Enviar Mensaje ]</h2>
-            <form id="contacto-form" action="https://formsubmit.co/javi.alt87@gmail.com" method="POST"  class="form-contacto">
+            <form id="contacto-form" action="https://formsubmit.co/javi.alt87@gmail.com" method="POST" class="form-contacto">
+                
+                <!-- Campos ocultos de configuración dentro del form -->
+                <input type="hidden" name="_next" value="https://javier-altamirano.github.io/Portfolio/">
+                <input type="hidden" name="_captcha" value="false">
+
                 <div class="grup-form">
-                    <label for="Name">Nombre:</label>
+                    <label for="Nombre">Nombre:</label>
                     <input type="text" id="Nombre" name="Nombre" placeholder="Name" class="textM"> 
                 </div>
 
                 <div class="grup-form">
-                    <label for="Last Name">Apellido:</label>
+                    <label for="Apellido">Apellido:</label>
                     <input type="text" id="Apellido" name="Apellido" placeholder="Last Name" class="textM">
                 </div>
 
@@ -221,11 +226,9 @@
                 </div>
 
                 <div class="texto-centro">
-                    <button onclick="enviar()" type="submit" class="btn enviar">Enviar</button>
+                    <button type="submit" class="btn enviar">Enviar</button>
                 </div>
             </form>
-            <input type="hidden" name="_next" value="https://javier-altamirano.github.io/Portfolio/">
-            <input type="hidden" name="_captcha" value="false">
         </div>
     </section>
 
