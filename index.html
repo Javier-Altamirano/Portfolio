@@ -199,30 +199,33 @@
     <section id="Contacto" class="seccion">
         <div class="caja">
             <h2>[ Enviar Mensaje ]</h2>
-            <form id="contacto-form" action="https://formsubmit.co/javi.alt87@gmail.com" method="POST" class="form-contacto">
+            
+            <div id="mensaje-exito" style="display: none; background-color: #d4edda; color: #155724; padding: 10px; margin-bottom: 15px; border-radius: 5px; text-align: center;">
+                ¡Gracias por contactarte! Tu mensaje fue enviado con éxito.
+            </div>
+
+            <form id="contacto-form" action="https://formsubmit.co/ajax/javi.alt87@gmail.com" method="POST" class="form-contacto">
                 
-                <!-- Campos ocultos de configuración dentro del form -->
-                <input type="hidden" name="_next" value="https://javier-altamirano.github.io/Portfolio/">
                 <input type="hidden" name="_captcha" value="false">
 
                 <div class="grup-form">
                     <label for="Nombre">Nombre:</label>
-                    <input type="text" id="Nombre" name="Nombre" placeholder="Name" class="textM"> 
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Name" class="textM" required> 
                 </div>
 
                 <div class="grup-form">
                     <label for="Apellido">Apellido:</label>
-                    <input type="text" id="Apellido" name="Apellido" placeholder="Last Name" class="textM">
+                    <input type="text" id="Apellido" name="Apellido" placeholder="Last Name" class="textM" required>
                 </div>
 
                 <div class="grup-form">
                     <label for="Email">Email:</label>
-                    <input type="email" id="Email" name="Email" placeholder="Email" class="textM"> 
+                    <input type="email" id="Email" name="Email" placeholder="Email" class="textM" required> 
                 </div>
 
                 <div class="grup-form">
                     <label for="Message">Mensaje:</label>
-                    <textarea id="Message" name="Message" placeholder="Message" cols="30" rows="5" class="textM"></textarea>
+                    <textarea id="Mensaje" name="Message" placeholder="Message" cols="30" rows="5" class="textM" required></textarea>
                 </div>
 
                 <div class="texto-centro">

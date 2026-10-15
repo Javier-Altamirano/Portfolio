@@ -1,19 +1,34 @@
-function enviar()
- {
-    var nombre = document.getElementById("Nombre").value;
-    var apellido = document.getElementById("Apellido").value;
-    var email = document.getElementById("Email").value;
-    var mensaje = document.getElementById("Mensaje").value;
+document.getElementById("contacto-form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
 
-    if(nombre === "" || apellido === "" || email === "" || mensaje === "")
-    {
-        alert("Por favor, completa todos los campos antes de enviar el mensaje.");
-        return;
-    }
-            
-    alert("Gracias por tu mensaje, " + nombre + "!");
-    document.getElementById("Nombre").value = "";
-    document.getElementById("Apellido").value = "";
-    document.getElementById("Email").value = "";
-    document.getElementById("Mensaje").value = "";
-}
+    const form = this;
+    const formData = new FormData(form);
+    const mensajeExito = document.getElementById("mensaje-exito");
+
+
+    fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+
+            mensajeExito.style.display = "block";
+
+            form.reset();
+
+            setTimeout(() => {
+                mensajeExito.style.display = "none";
+            }, 5000);
+        } else {
+            alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Ocurrió un error de conexión.");
+    });
+});
